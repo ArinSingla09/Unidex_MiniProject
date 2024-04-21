@@ -8,7 +8,7 @@ function Home(){
     <div className='w-screen h-screen bg-[url("./assets/Background_home.png")] bg-cover'>
         <nav className="w-full h-[10%]">
         <div className="float-right mt-2 w-[25%]">
-            <a href="/login"><button className="p-2.5 w-[40%] text-white px-6 border-[#2A9D8F] border-2 rounded-3xl mr-4 hover:bg-[#2A9D8F] font-temp">Login</button></a>
+            <a href="/login"><button className="p-2 w-[40%] text-white px-6 border-[#2A9D8F] border-2 rounded-3xl mr-4 hover:bg-[#2A9D8F] font-temp">Login</button></a>
             <a href="/signup"><button className="p-2 px-6 w-[40%] text-white bg-[#2A9D8F] border-[#2A9D8F] border-2  mr-4 rounded-3xl hover:bg-inherit font-temp">Sign Up</button></a>
         </div>
         </nav>
