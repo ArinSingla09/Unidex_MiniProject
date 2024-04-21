@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "../assets/UniDexlogo.png"
-import Profile from "../assets/profile.svg"
+import { BiLogOut } from "react-icons/bi";
+
 export default function Navbar() {
     const [activeTab, setActiveTab] = useState("");
     useEffect(() => {
@@ -17,7 +18,7 @@ export default function Navbar() {
             <a href="/todo-list" className={`${activeTab === "todo-list" ? "bg-[#e76f51] scale-125" : ""} w-[10%] h-[50%] rounded-3xl font-temp text-center text-white text-xl hover:bg-[#e76f51] hover:scale-125`}><p className="font-temp text-white text-center text-xl mt-2">ToDo List</p></a>
             <a href="/faqs" className={`${activeTab === "faqs" ? "bg-[#e76f51] scale-125" : ""} w-[10%] h-[50%] rounded-3xl font-temp text-center text-white text-xl hover:bg-[#e76f51] hover:scale-125`}><p className="font-temp text-white text-center text-xl mt-2">FAQ's</p></a>
             <a href="/about-us" className={`${activeTab === "about-us" ? "bg-[#e76f51] scale-125" : ""} w-[10%] h-[50%] rounded-3xl font-temp text-center text-white text-xl hover:bg-[#e76f51] hover:scale-125`}><p className="font-temp text-white text-center text-xl mt-2">About Us</p></a>
-            <img src={Profile} alt="" className="p-4 rounded-full" />
+            <BiLogOut size={40} />
         </div>
     );
 }
