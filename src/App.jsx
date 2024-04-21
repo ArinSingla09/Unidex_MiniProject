@@ -1,6 +1,5 @@
 import Home from './components/Home'
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom"
-import './App.css'
 import BudgetTracker from './components/BudgetTracker'
 import Todolis from './components/Todolis'
 import Faq from './components/Faq'
